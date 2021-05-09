@@ -8,7 +8,16 @@
 - Sgript generates a new data model combined from these two files  
 - The user can choose output format of json / xml by specifying certain flags when script execution called  
 
-- CLI argiments to be specified:  
-students (file path)  
-rooms (file path)  
-output_format (xml or json)  
+- CLI usage:  
+```
+usage: generate_groups.py [-h] [-f [FORMAT]] [-s [STUDENTS]] [-r [ROOMS]]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -f [FORMAT], --format [FORMAT]
+                        specify output format
+  -s [STUDENTS], --students [STUDENTS]
+                        specify students.json file path
+  -r [ROOMS], --rooms [ROOMS]
+                        specify rooms.json file path
+```
